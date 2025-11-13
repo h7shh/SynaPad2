@@ -1,0 +1,60 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "model": {
+      "type": "string",
+      "enum": [
+        "Core",
+        "Plus",
+        "Pro"
+      ]
+    },
+    "price": {
+      "type": "number",
+      "description": "Price in AED"
+    },
+    "color": {
+      "type": "string"
+    },
+    "target_audience": {
+      "type": "string"
+    },
+    "screen_size": {
+      "type": "string"
+    },
+    "build_material": {
+      "type": "string"
+    },
+    "storage": {
+      "type": "string"
+    },
+    "stylus_type": {
+      "type": "string"
+    },
+    "battery_life": {
+      "type": "string"
+    },
+    "special_features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "model",
+    "price"
+  ]
+}
